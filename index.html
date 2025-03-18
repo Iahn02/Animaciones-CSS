@@ -1,11 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/styles.css">
+    <title>Mini Pokedex</title>
 </head>
 <body>
-        
+    <!-- Menu de vista web -->
+    <div id="sidebar" class="menu">
+        <div class="menu-header ">
+            <img class="menu-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Logo">
+            <span>Menú</span>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link link-dark">Planta</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link link-dark">Fuego</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link link-dark">Agua</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link link-dark">Insecto</a>
+            </li>
+        </ul>
+    </div>
+    <button id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Menu de vista web -->
+    <div class="grid-container">
+    <div class="menuLaptop color-menu">
+        <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <img class="menu-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2052px-Pok%C3%A9_Ball_icon.svg.png" alt="Icono de Pokemon" width="40" height="32">
+                <span class="fs-4" style="color:white;">Mini Pokedex</span>
+            </a>
+            <hr>
+            <ul class="mb-auto" style="text-decoration: nones;">
+                <li class="nav">
+                    <a href="#" class="nav-li" style="text-decoration: none;" >Planta</a>
+                </li>
+                <li class="nav">
+                    <a href="#" class="nav-li" style="text-decoration: none;" >Fuego</a>
+                </li>
+                <li class="nav">
+                    <a href="#" class="nav-li" style="text-decoration: none;" >Agua</a>
+                </li>
+                <li class="nav">
+                    <a href="#" class="nav-li" style="text-decoration: none;" >Insecto</a>
+                </li>
+            </ul>
+            <hr>
+            <button class="btn btn-danger" id="menu-toggle" toggle="false" target="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+        </div>
+    </div>
+
+        <div class="principal">
+            <div class="filtro">
+                <input type="text" placeholder="Buscar Pokemon">
+            </div>
+            <div class="main">
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="">
+                    </div>
+                    <span>#1</span>
+                    <h2>Bulbasaur</h2>
+                    <span>Tipo: Planta</span>
+                </article>
+                
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="">
+                    </div>
+                    <span>#2</span>
+                    <h2>Ivysaur</h2>
+                    <span>Tipo: Planta</span>
+                </article>
+                
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="">
+                    </div>
+                    <span>#3</span>
+                    <h2>Venusaur</h2>
+                    <span>Tipo: Planta</span>
+                </article>
+                
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="">
+                    </div>
+                    <span>#4</span>
+                    <h2>Charmander</h2>
+                    <span>Tipo: Fuego</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="">
+                    </div>
+                    <span>#5</span>
+                    <h2>Charmeleon</h2>
+                    <span>Tipo: Fuego</span>
+                </article>
+                
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="">
+                    </div>
+                    <span>#6</span>
+                    <h2>Charizard</h2>
+                    <span>Tipo: Fuego</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="">
+                    </div>
+                    <span>#7</span>
+                    <h2>Squirtle</h2>
+                    <span>Tipo: Agua</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" alt="">
+                    </div>
+                    <span>#8</span>
+                    <h2>Wartortle</h2>
+                    <span>Tipo: Agua</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="">
+                    </div>
+                    <span>#9</span>
+                    <h2>Blastoise</h2>
+                    <span>Tipo: Agua</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" alt="">
+                    </div>
+                    <span>#10</span>
+                    <h2>Caterpie</h2>
+                    <span>Tipo: Insecto</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" alt="">
+                    </div>
+                    <span>#11</span>
+                    <h2>Metapod</h2>
+                    <span>Tipo: Insecto</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="">
+                    </div>
+                    <span>#12</span>
+                    <h2>Butterfree</h2>
+                    <span>Tipo: Insecto</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" alt="">
+                    </div>
+                    <span>#13</span>
+                    <h2>Weedle</h2>
+                    <span>Tipo: Insecto</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="">
+                    </div>
+                    <span>#14</span>
+                    <h2>Kakuna</h2>
+                    <span>Tipo: Insecto</span>
+                </article>
+                <article>
+                    <div class="product-image">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" alt="">
+                    </div>
+                    <span>#15</span>
+                    <h2>Beedrill</h2>
+                    <span>Tipo: Insecto</span>
+                </article>
+            </main>
+        </div>
+        <div class="footer">
+            <div class="RRSS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </div>
+            <span> © Todos los derechos reservados <br> made with ❤️ by <a href="https://www.instagram.com/not.iahn/">@not.iahn</a></span>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
