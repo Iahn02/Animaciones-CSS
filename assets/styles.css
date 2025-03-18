@@ -1,0 +1,22 @@
+/* Para móviles */
+@media (max-width: 480px) {
+    .elemento {
+        font-size: 14px;
+    }
+}
+
+/* Para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .elemento {
+        font-size: 16px;
+    }
+}
+
+/* Para escritorio */
+@media (min-width: 769px) {
+    .elemento {
+        font-size: 18px;
+    }
+
+    
+}
