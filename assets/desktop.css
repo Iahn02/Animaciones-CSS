@@ -1,0 +1,136 @@
+@media (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        min-height: 100vh;
+    }
+
+    .menuLaptop {
+        display: block;
+        height: 100vh;
+        position: fixed;
+        width: 280px;
+    }
+
+    .color-menu {
+        background-color: #1a1a1a;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .nav-li {
+        color: white;
+        font-size: 1.1em;
+        transition: color 0.3s;
+    }
+
+    .nav-li:hover {
+        color: #dc3545;
+    }
+
+    .principal {
+        margin-left: 280px;
+        padding: 20px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .pokemon-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .pokemon-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .product-image {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .product-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card-content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .pokemon-id {
+        color: #666;
+        font-size: 0.9em;
+    }
+
+    .pokemon-type {
+        display: block;
+        margin: 10px 0;
+        color: #444;
+    }
+
+    .pokemon-button {
+        background: #dc3545;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .pokemon-button:hover {
+        background: #c82333;
+    }
+
+    .filtro {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .filtro input {
+        width: 50%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+        font-size: 1em;
+    }
+
+    .footer {
+        margin-left: 280px;
+        padding: 20px;
+        text-align: center;
+        background: #f8f9fa;
+    }
+
+    .rrss-img {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .rrss-img img {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s;
+    }
+
+    .rrss-img img:hover {
+        transform: scale(1.1);
+    }
+}
+
