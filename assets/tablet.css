@@ -1,0 +1,50 @@
+@media (min-width: 481px) and (max-width: 768px) {
+    .main {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .pokemon-button {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .filtro {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .filtro input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .pokemon-card {
+        backdrop-filter: blur(3px);
+    }
+}
+
+[data-type="Planta"] .pokemon-button {
+    background-color: #98d7a5;
+}
+
+[data-type="Fuego"] .pokemon-button {
+    background-color: #ff5555;
+}
+
+[data-type="Agua"] .pokemon-button {
+    background-color: #5599ff;
+}
+
+[data-type="Insecto"] .pokemon-button {
+    background-color: #a6b91a;
+}

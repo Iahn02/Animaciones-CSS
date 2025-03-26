@@ -1,6 +1,7 @@
 @media (min-width: 768px) {
     .menu {
-        display: none;
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 
     .grid-container {

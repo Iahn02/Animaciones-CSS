@@ -1,47 +1,38 @@
-/* Para móviles */
-
 @media (max-width: 480px) {
-    /* Ajuste del contenedor principal para dispositivos pequeños */
     .grid-container {
       display: grid;
-      grid-template-columns: 1fr; /* Cambia a una sola columna */
-      width: 100%; /* Ocupa todo el ancho disponible */
+      grid-template-columns: 1fr;
+      width: 100%;
   }
   
-  /* Ajustes del menú para móvil */
   .menuLaptop {
-      display: none; /* Oculta el menú de escritorio */
+      display: none;
   }
   
-  /* Estilos del menú hamburguesa */
   .menu {
-      width: 100%; /* El menú ocupa todo el ancho en móvil */
+      width: 100%;
       top: 0;
-      left: -100%; /* Inicialmente oculto fuera de la pantalla */
-      z-index: 1000; /* Asegura que esté por encima de otros elementos */
+      left: -100%;
+      z-index: 1000;
   }
   
-  /* Botón del menú hamburguesa */
   #menu-toggle {
       position: fixed;
       top: 10px;
       left: 10px;
       z-index: 1001;
-      padding: 8px; /* Reduce el padding para que sea más compacto */
+      padding: 8px;
   }
   
-  /* Ajustes de la sección principal */
   .principal {
-      margin: 60px 10px 10px 10px; /* Margen superior para no solapar con el botón de menú */
+      margin: 60px 10px 10px 10px;
   }
   
-  /* Ajuste de la cuadrícula de pokémon */
   .main {
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      gap: 10px; /* Reduce el espacio entre tarjetas */
+      gap: 10px;
   }
   
-  /* Ajustes de las tarjetas de pokémon */
   article {
       padding: 1em;
       width: 100%;
@@ -52,13 +43,11 @@
       border-radius: 1em;
   }
   
-  /* Ajuste del tamaño de las imágenes */
   .product-image img {
       width: 100%;
       height: auto;
   }
   
-  /* Ajustes del texto en las tarjetas */
   article h2 {
       font-size: 36px;
   }
@@ -67,32 +56,28 @@
       font-size: 24px;
   }
   
-  /* Ajustes del footer */
   .footer {
-      margin-left: 0; /* Elimina el margen izquierdo */
-      padding: 15px; /* Reduce el padding */
-      text-align: center; /* Centra el contenido */
+      margin-left: 0;
+      padding: 15px;
+      text-align: center;
   }
   
-  /* Ajustes de los iconos de redes sociales */
   .rrss-img {
-      justify-content: center; /* Centra los iconos */
-      gap: 15px; /* Reduce el espacio entre iconos */
+      justify-content: center;
+      gap: 15px;
   }
   
   .rrss-img img {
-      width: 25px; /* Reduce el tamaño de los iconos */
+      width: 25px;
       height: 25px;
   }
   
-  /* Ajustes del campo de búsqueda */
   .filtro input {
-      padding: 8px; /* Reduce el padding del input */
-      font-size: 14px; /* Reduce el tamaño del texto */
+      padding: 8px;
+      font-size: 14px;
   }
   }
   
-  /* Centrado del contenedor principal */
   .main {
       display: grid;
       color: #5599ff;
@@ -100,10 +85,9 @@
       gap: 15px;
       padding: 10px;
       max-width: 1200px;
-      margin: 0 auto; /* Esto centra el contenedor */
+      margin: 0 auto;
   }
   
-  /* Estilos para el botón */
   .pokemon-button {
       margin-top: 10px;
       padding: 8px 16px;
@@ -125,67 +109,11 @@
       transform: translateY(0);
   }
   
-  /* Centrado del contenido de la tarjeta */
   .card-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       gap: 8px;
-  }
-  
-  /* Media query para tablets */
-  @media (min-width: 481px) and (max-width: 768px) {
-      .main {
-          padding: 15px;
-          width: 90%; /* Ajusta el ancho en tablets */
-      }
-  
-      .pokemon-button {
-          padding: 6px 12px;
-          font-size: 0.85rem;
-      }
-  
-      /* Ajuste del contenedor principal para mejor centrado */
-      .principal {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 100%;
-      }
-  
-      /* Ajuste del filtro para mantener consistencia */
-      .filtro {
-          width: 90%;
-          margin-bottom: 15px;
-      }
-  
-      .filtro input {
-          width: 100%;
-          padding: 8px;
-          border-radius: 20px;
-          border: 1px solid #ddd;
-      }
-  
-      .pokemon-card {
-          backdrop-filter: blur(3px); /* Reducir el blur en tablets */
-      }
-  }
-  
-  /* Variantes de color del botón según el tipo de Pokémon */
-  [data-type="Planta"] .pokemon-button {
-      background-color: #98d7a5;
-  }
-  
-  [data-type="Fuego"] .pokemon-button {
-      background-color: #ff5555;
-  }
-  
-  [data-type="Agua"] .pokemon-button {
-      background-color: #5599ff;
-  }
-  
-  [data-type="Insecto"] .pokemon-button {
-      background-color: #a6b91a;
   }
   
